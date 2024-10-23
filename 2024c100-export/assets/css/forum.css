@@ -135,6 +135,7 @@
   padding: 23px 20px;
   text-align: center;
   border-radius: 30px;
+  cursor: pointer;
 }
 @media (min-width: 992px) {
   .page-forum .sq-btn {
@@ -449,6 +450,22 @@
   .forum-timeline .table .row.odd {
     gap: 3px;
     padding: 0;
+  }
+}
+.forum-timeline .table .row.odd.densed {
+  padding: 0 0 24px 0;
+}
+@media (min-width: 992px) {
+  .forum-timeline .table .row.odd.densed {
+    padding: 0;
+  }
+}
+.forum-timeline .table .row.odd.densed .td {
+  padding: 0 22px 0 22px;
+}
+@media (min-width: 992px) {
+  .forum-timeline .table .row.odd.densed .td {
+    padding: 0 24px 24px 24px;
   }
 }
 .forum-timeline .table .row.odd.line {
