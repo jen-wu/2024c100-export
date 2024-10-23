@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="canonical" href="" id="canonical-url-link">
+    <link rel="shortcut icon" href="" sizes="32x32" type="image/png">
+
+    <!-- fb meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- 個別頁面 css -->
+    <link rel="stylesheet" href="assets/css/forum.css" type="text/css">
+
+    <!-- js-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            //切換議程表
+            $(".tab").on("click", function () {
+                $(".tab").removeClass("active");
+                $(this).addClass("active");
+                $(".content").removeClass("active");
+                $($(this).data("target")).addClass("active");
+                AOS.init({
+                    offset: (jQuery(window).height() * 0.25),
+                    duration: 700,
+                    easing: 'ease-out',
+                    anchorPlacement: 'top-bottom',
+                    once: false
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <main class="page-forum">
+        <nav class="navbar">
+            <div class="toggle-menu on"></div>
+            <div class="container">
+                <a class="logo" href="https://www.businessweekly.com.tw/event/site/esg" target="_blank"><img src="assets/images/logo.png" alt=""></a>
+                <ul class="menu mob-hidden">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="forum.html">論壇資訊</a></li>
+                    <!-- <li class="submenu-parent">
+                        <a href="#">競爭力 100 強 ＋</a>
+                        <ul class="submenu">
+                            <li><a class="non">2024 競爭力 100 強</a>
+                                <ul>
+                                    <li><a href="#">評選資格</a></li>
+                                    <li><a href="#">百強名單</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">2023 競爭力 100 強</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">最新報導</a></li>
+                    <li><a href="#">與永續者同行</a></li> -->
+                    <li><button class="action-btn">加入永續者</button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="fix-btn">
+            <div id="top"></div>
+        </div>
+        <section class="kv">
+            <div class="kv-wrap">
+                <picture class="img-kv">
+                    <source media="(max-width: 992px)" srcset="assets/images/feature/kv_bg_mobile.png" />
+                    <source media="(max-width: 1439px)" srcset="assets/images/feature/kv_bg.png" />
+                    <img src="assets/images/feature/kv_bg_xl.png" alt="">
+                </picture>
+                <picture class="img-logo" data-aos="fade-up" data-aos-offset="0" data-aos-duration="900"
+                    data-aos-delay="200">
+                    <source media="(max-width: 992px)" srcset="assets/images/feature/kv_logo_mobile.png" />
+                    <source media="(max-width: 1439px)" srcset="assets/images/feature/kv_logo.png" />
+                    <img src="assets/images/feature/kv_logo_xl.png" alt="">
+                </picture>
+            </div>
+        </section>
+
+        <!-- 論壇時間地點、報名 start -->
+        <section class="forum-date">
+            <div class="text-wrap">
+                <div class="title-s">時間</div>
+                <div class="content" data-aos="fade-up" data-aos-offset="0" data-aos-delay="250">2024 . 11 . 27</div>
+            </div>
+            <div class="text-wrap">
+                <div class="title-s">地點</div>
+                <div class="content add" data-aos="fade-up" data-aos-offset="0" data-aos-delay="200">台北市信義區松仁路 123
+                    號<span>( 華南銀行國際會議中心 )</span></div>
+            </div>
+            <div class="btn-wrap attend">
+                <a class="sq-btn signup01">現場席次報名</a>
+                <a class="sq-btn signup02">線上觀看報名</a>
+            </div>
+        </section>
+        <!-- 論壇時間地點、報名 end -->
+
+        <!-- 直播區塊 start -->
+        <!-- <section class="forum-live">
+            <div class="live-video-wrap"><iframe frameborder="0" allowfullscreen="allowfullscreen" width="640" height="360" src="https://app.straas.net/smart.businessweekly.com.tw-test/lives/yvYesuge?views_count=0&users_count=0" loading="lazy"></iframe></div>
+            <div class="live-chat-wrap"><iframe src="https://app.sli.do/event/6yqTg9Jv7zAD5LU757sWmS" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" allow="clipboard-write" title="Slido"></iframe></div>
+        </section> -->
+        <!-- 直播區塊 end -->
+
+        <section class="forum-timeline">
+            <div class="title-s">議程</div>
+            <div class="tab-container">
+                <div class="tabs">
+                    <button class="tab" data-target="#meeting">百強榮譽頒獎暨交流會</button>
+                    <button class="tab active" data-target="#forum">碳競爭力高峰論壇</button>
+                </div>
+                <div class="tab-content">
+                    <div id="meeting" class="content" data-aos="fade-up">
+                        <div class="table">
+                            <div class="row head">
+                                <div class="th">時間</div>
+                                <div class="th">議題</div>
+                                <div class="th">講者</div>
+                            </div>
+                            <div class="row odd">
+                                <div class="td">09:30</div>
+                                <div class="td">商周代表開場致詞</div>
+                                <div class="td">商周集團執行長 郭奕伶</div>
+                            </div>
+                            <div class="row even">
+                                <div class="td">09:50</div>
+                                <div class="td">頒獎典禮</div>
+                                <div class="td">2024碳競爭力百強企業</div>
+                            </div>
+                            <div class="row odd">
+                                <div class="td">10:50</div>
+                                <div class="td">碳競爭力評鑑指標</div>
+                                <div class="td">臺灣大學風險社會政策研究中心<br>周桂田 主任 </div>
+                            </div>
+                            <div class="row even">
+                                <div class="td">11:10</div>
+                                <div class="td">智慧製造 鏈結智慧未來</div>
+                                <div class="td">經濟部代表</div>
+                            </div>
+                            <div class="row odd line">
+                                <div class="td">11:30</div>
+                                <div class="td">活動交流</div>
+                                <div class="td">Mingle:轉至交誼廳</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="forum" class="content active">
+                        <div class="table">
+                            <div class="row head">
+                                <div class="th">時間</div>
+                                <div class="th">議題</div>
+                                <div class="th">講者</div>
+                            </div>
+                            <div class="row odd">
+                                <div class="td">13:30</div>
+                                <div class="td">商周代表開場致詞</div>
+                                <div class="td">《商業周刊》產品長 曠文琪</div>
+                            </div>
+                            <div class="row even">
+                                <div class="td">13:40</div>
+                                <div class="td">碳競爭力百強企業分享</div>
+                                <div class="td">碳競爭力百強企業</div>
+                            </div>
+                            <div class="row odd">
+                                <div class="td">13:55</div>
+                                <div class="td">碳競爭力百強企業分享</div>
+                                <div class="td">碳競爭力百強企業</div>
+                            </div>
+                            <div class="row even">
+                                <div class="td">14:10</div>
+                                <div class="td">碳競爭力百強企業分享</div>
+                                <div class="td">碳競爭力百強企業</div>
+                            </div>
+                            <div class="row odd">
+                                <div class="td">14:25</div>
+                                <div class="td">碳競爭力百強對談</div>
+                                <div class="td">主持人：《商業周刊》總主筆 呂國禎<br>與談人：碳競爭力百強企業</div>
+                            </div>
+                            <div class="row even">
+                                <div class="td">15:10</div>
+                                <div class="td">中場休息</div>
+                                <div class="td"> </div>
+                            </div>
+                            <div class="row odd">
+                                <div class="td">15:30</div>
+                                <div class="td">SBTi價值鏈外減碳(BVCM)解決範疇三碳排</div>
+                                <div class="td">SBTi驗證委員</div>
+                            </div>
+                            <div class="row even">
+                                <div class="td">15:45</div>
+                                <div class="td">碳變革內化企業競爭力 企業永續發展的挑戰</div>
+                                <div class="td">環境部代表</div>
+                            </div>
+                            <div class="row odd">
+                                <div class="td">16:00</div>
+                                <div class="td">智慧節能建築：低碳為核心 節能為實踐</div>
+                                <div class="td">企業代表</div>
+                            </div>
+                            <div class="row even">
+                                <div class="td">16:15</div>
+                                <div class="td">企業減碳應用案例</div>
+                                <div class="td">企業代表</div>
+                            </div>
+                            <div class="row odd">
+                                <div class="td">16:30</div>
+                                <div class="td">聚焦供應鏈減碳新策略與新商模</div>
+                                <div class="td">主持人：《商業周刊》ESG總編輯 管婺媛<br>與談人：企業代表</div>
+                            </div>
+                            <div class="row even">
+                                <div class="td">17:10</div>
+                                <div class="td">活動圓滿結束賦歸</div>
+                                <div class="td"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="forum-feature">
+            <div class="title-l">關鍵洞察與解方亮點</div>
+            <div class="feature-list">
+                <div class="feature-wrap f01" data-aos="fade-up" data-aos-anchor=".forum-feature .title-l">
+                    <div class="title">
+                        <span class="num">01</span>
+                        <span class="text">百強企業 1+N 策略解析</span>
+                    </div>
+                    <div class="content">
+                        <div class="subtitle">建構淨零轉型競爭力 共創以大帶小供應鏈</div>
+                        <p>供應鏈脫碳正逐漸成為趨勢，品牌企業與供應商如何解決減碳共識的困難？可以怎麼做？有哪些方法？</p>
+                    </div>
+                </div>
+                <div class="feature-wrap f02" data-aos="fade-up" data-aos-anchor=".forum-feature .f01 p"
+                    data-aos-delay="100">
+                    <div class="title">
+                        <span class="num">02</span>
+                        <span class="text">SBTi 驗證委員跨海現身指導</span>
+                    </div>
+                    <div class="content">
+                        <div class="subtitle">範疇三挑戰大  SBTi 指引的企業因應之道</div>
+                        <p>永續已成為評估企業的一項關鍵指標，SBTi 與認證公司現身說法，解析減碳目標對企業永續的理解和信任。</p>
+                    </div>
+                </div>
+                <div class="feature-wrap f03" data-aos="fade-up" data-aos-anchor=".forum-feature .f02 p"
+                    data-aos-delay="200">
+                    <div class="title">
+                        <span class="num">03</span>
+                        <span class="text">企業永續轉型應用</span>
+                    </div>
+                    <div class="content">
+                        <div class="subtitle">供應鏈減碳新策略與新商模</div>
+                        <p>台灣工業減碳新技術? 如何運用減碳作為連結國際競爭力，開闢碳競爭力的新藍海。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 論壇報名 start -->
+            <div class="btn-wrap attend">
+                <a class="sq-btn signup01">現場席次報名</a>
+                <a class="sq-btn signup02">線上觀看報名</a>
+            </div>
+            <!-- 論壇報名 end -->
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <picture class="partner">
+                <source media="(max-width: 992px)" srcset="assets/images/partner.png" />
+                <img src="assets/images/dt/partner.png" alt="">
+            </picture>
+            <p><img src="assets/images/logo_bw.svg" alt="" class="logo">2024 Business Weekly a division of Cite
+                Publishing Ltd All Rights Reserved.</p>
+            <div class="deco deco-right"></div>
+            <div class="deco deco-left"></div>
+        </div>
+
+    </footer>
+
+
+    <section class="popup hidden" id="form-pop-1">
+        <div class="popup-close popup-backdrop" tabindex="0"></div>
+
+        <div class="popup-body-wrap">
+            <div class="popup-body">
+                <div class="content">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <i class="popup-close-btn">
+                    <img src="assets/images/close.svg">
+                </i>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

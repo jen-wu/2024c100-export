@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>    
+    <meta name="description" content="">
+    <link rel="canonical" href="" id="canonical-url-link">
+    <link rel="shortcut icon" href="" sizes="32x32" type="image/png">
+
+    <!-- fb meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">    
+    <meta property="og:image" content="">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- 個別頁面 css -->
+    <link rel="stylesheet" href="assets/css/index.css" type="text/css">
+
+    <!-- js-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="toggle-menu on"></div>
+            <div class="container">
+                <a class="logo" href="https://www.businessweekly.com.tw/event/site/esg" target="_blank"><img src="assets/images/logo.png" alt=""></a>
+                <ul class="menu mob-hidden">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="forum.html">論壇資訊</a></li>
+                    <!-- <li class="submenu-parent">
+                        <a href="#">競爭力 100 強 ＋</a>
+                        <ul class="submenu">
+                            <li><a class="non">2024 競爭力 100 強</a>
+                                <ul>
+                                    <li><a href="#">評選資格</a></li>
+                                    <li><a href="#">百強名單</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">2023 競爭力 100 強</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">最新報導</a></li>
+                    <li><a href="#">與永續者同行</a></li> -->
+                    <li><button class="action-btn">加入永續者</button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="fix-btn">
+            <div id="top"></div>
+        </div>
+
+        <video poster="" loop="" muted="" autoplay="" playsinline="" class="kv-video">
+            <source src="assets/images/bg_video.mp4">
+        </video>
+
+        <section class="kv">
+            <div class="kv-wrap">
+                <picture class="img-kv">
+                    <source media="(max-width: 992px)" srcset="assets/images/kv.jpg" />
+                    <img src="assets/images/dt/kv_lg.jpg" alt="">
+                </picture>
+                <picture class="img-kvlogo" data-aos="fade-right" data-aos-duration="900" data-aos-delay="200">
+                    <source media="(max-width: 992px)" srcset="assets/images/kv_logo.png" />
+                    <img src="assets/images/dt/kv_logo.png" alt="">
+                </picture>
+                <picture class="img-star">
+                    <img src="assets/images/dt/kv_star.png" alt="">
+                </picture>
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="video-content" data-aos="fade-in">
+                <p>國內唯一將「碳」與企業營運表現<span class="br-mobile"></span>掛鉤在一起的指標調查</p>
+                <picture class="video-logo">
+                    <source media="(max-width: 992px)" srcset="assets/images/video_logo.png" />
+                    <img src="assets/images/dt/video_logo.png" alt="">
+                </picture>
+                <p>他們，重新定位一家企業的價值，<span class="br-mobile"></span>重塑一間好公司的定義！<br>在新商業賽道上，證明企業能兼顧獲利、環境，<span class="br-mobile"></span>把員工們顧好！</p>
+                <p>商周將藉由評比、頒獎、報導與論壇<br>讓100位永續者的寶貴經驗，<span class="br-mobile"></span>分享給更多國內外企業與各界參考。<br>我們希望，讓更多有志者，能與永續者同行！</p>
+                <div class="video-play"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <picture class="partner">
+                <source media="(max-width: 992px)" srcset="assets/images/partner.png" />
+                <img src="assets/images/dt/partner.png" alt="">
+            </picture>
+            <p><img src="assets/images/logo_bw.svg" alt="" class="logo">2024 Business Weekly a division of Cite Publishing Ltd All Rights Reserved.</p>
+            <div class="deco deco-right"></div>
+            <div class="deco deco-left"></div>
+        </div>
+        
+    </footer>
+
+    <section class="popup hidden" id="video-pop">
+        <div class="popup-close popup-backdrop" tabindex="0"></div>
+
+        <div class="popup-body-wrap">
+            <div class="popup-body">
+                <div id="video-embed"></div>
+                <i class="popup-close-btn">
+                    <img src="assets/images/close.svg">
+                </i>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup hidden" id="form-pop-1">
+        <div class="popup-close popup-backdrop" tabindex="0"></div>
+
+        <div class="popup-body-wrap">
+            <div class="popup-body">
+                <div class="content">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <i class="popup-close-btn">
+                    <img src="assets/images/close.svg">
+                </i>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
