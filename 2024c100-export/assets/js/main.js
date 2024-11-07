@@ -161,7 +161,9 @@ $(document).ready(function () {
   $("#top").on("click", function () {
     $(window).scrollTo({ top: '0px', left: '0px' }, 800);
   });
-
+  $('#book').on('click', function() {
+      window.open('https://drive.google.com/drive/folders/17MlIOwBA-VBZjU-YDNFD4J0XbjH1mzN7?usp=drive_link', '_blank');
+  });
  
 
   const navbar = document.querySelector('.navbar .container');

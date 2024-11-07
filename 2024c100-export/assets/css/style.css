@@ -34,6 +34,36 @@ body.overflow-hidden {
     background-image: url(../images/PC-TOP.svg);
   }
 }
+.fix-btn.live {
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+.fix-btn.live #top {
+  -webkit-filter: none;
+          filter: none;
+  background-image: url(../images/MB-TOP-live.svg);
+}
+@media (min-width: 992px) {
+  .fix-btn.live #top {
+    width: 141px;
+    height: 77px;
+    background-image: url(../images/PC-TOP-live.svg);
+  }
+}
+.fix-btn.live #book {
+  width: 93px;
+  height: 123px;
+  background-image: url(../images/MB-book.svg);
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  .fix-btn.live #book {
+    width: 141px;
+    height: 113px;
+    background-image: url(../images/PC-book.svg);
+  }
+}
 
 .navbar {
   background-color: #fff;
@@ -66,6 +96,11 @@ body.overflow-hidden {
 @media (min-width: 992px) {
   .navbar .container.shrink {
     height: 83px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .container.shrink .menu a {
+    line-height: 83px;
   }
 }
 .navbar .logo {
@@ -306,7 +341,7 @@ body.overflow-hidden {
   }
 }
 .navbar .submenu a {
-  line-height: 1.5;
+  line-height: 1.5 !important;
   padding: 0;
 }
 .navbar .action-btn {

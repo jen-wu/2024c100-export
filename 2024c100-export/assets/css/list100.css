@@ -288,6 +288,7 @@
           justify-content: center;
   height: 90px;
   letter-spacing: 2px;
+  text-align: center;
 }
 @media (min-width: 992px) {
   .list .group .group-title {
